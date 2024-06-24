@@ -6,7 +6,6 @@
  */
 
 #define CONFIG_H_
-#define CONFIG_H_
 #include "stdint.h"
 
 //Dangerzone, do not touch!!
@@ -19,7 +18,7 @@
 
 #define SPEEDFILTER 3
 
-//#define ADCTHROTTLE
+#define ADCTHROTTLE
 //#define FAST_LOOP_LOG
 //#define DISABLE_DYNAMIC_ADC
 
@@ -38,12 +37,12 @@
 
 // min and max values of throttle and brake signals in ADC counts
 #define THROTTLEOFFSET 45
-#define THROTTLEMAX 200
+#define THROTTLEMAX 190
 #define BRAKEOFFSET 50
 #define BRAKEMAX 190
 
 // parameters for speed calculation
-#define WHEEL_CIRCUMFERENCE 550 //690 for original M365 motor
+#define WHEEL_CIRCUMFERENCE 690 //690 for original M365 motor
 #define GEAR_RATIO 15 //15 for original M365 motor
 
 // speed limits for invividual modes in kph
@@ -53,14 +52,14 @@
 
 // motor current limits for invividual modes in mA, see default settings at https://max.cfw.sh/#
 #define PH_CURRENT_MAX_ECO 26000
-#define PH_CURRENT_MAX_NORMAL 55000
-#define PH_CURRENT_MAX_SPORT 55000
+#define PH_CURRENT_MAX_NORMAL 50000
+#define PH_CURRENT_MAX_SPORT 50000
 
 // motor current limit for regen in mA
 #define REGEN_CURRENT 20000
 
 // maximum current for flux weakening in mA
-#define FW_CURRENT_MAX 55000 //max id
+#define FW_CURRENT_MAX 40000 //max id
 
 // maximum battery currents in mA
 #define BATTERYCURRENT_MAX 30000
