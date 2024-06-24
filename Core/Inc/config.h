@@ -31,9 +31,9 @@
 #define CAL_I 38		// ADC counts * CAL_I = current in mA
 
 // gains for PI controls
-#define P_FACTOR_I_Q 200
+#define P_FACTOR_I_Q 100
 #define I_FACTOR_I_Q 2
-#define P_FACTOR_I_D 200
+#define P_FACTOR_I_D 100
 #define I_FACTOR_I_D 10
 
 // min and max values of throttle and brake signals in ADC counts
