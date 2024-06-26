@@ -6,6 +6,7 @@
  */
 
 #define CONFIG_H_
+#define CONFIG_H_
 #include "stdint.h"
 
 //Dangerzone, do not touch!!
